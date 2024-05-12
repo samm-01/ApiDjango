@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 
-class employee(models.Model):
+class Employee(models.Model):
     eid = models.IntegerField()
-    ename = models.CharField()
+    ename = models.CharField(max_length=40)
     esal = models.FloatField()
 
 

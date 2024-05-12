@@ -1,8 +1,8 @@
 from pyexpat import model
-from rest_framework import serialzers
-from .models import employee
+from rest_framework import serializers
+from .models import Employee
 
-class EmployeeSerializer(serialzers.ModelSerialzer):
+class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = employee
+        model = Employee
         fields = "__all__"
